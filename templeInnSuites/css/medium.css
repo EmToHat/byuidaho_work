@@ -1,0 +1,32 @@
+@media (min-width: 600px) {
+    .templeCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .foto-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+    .photo {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two-s-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .missionary img{
+        width: 500px;
+    }
+
+    .missionary-boxes-container {
+        flex-direction: row;
+    }
+
+}

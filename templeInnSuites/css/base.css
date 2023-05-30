@@ -1,0 +1,650 @@
+/* Small View */
+
+/*=============================================
+=                  All Elements               =
+=============================================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Barlow', sans-serif, Arial;
+}
+
+img {
+  width: 100%;
+}
+
+header, footer {
+  background-color: rgb(50, 102, 129);
+  color: white;
+  text-align: center;
+}
+
+footer img {
+  width: 35px;
+  padding: 5px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+}
+
+iframe {
+  padding: 9px;
+}
+
+.header-img {
+  width: 30px;
+}
+/*----------  Header  ----------*/
+/* title, logo, nav links, hamburger menu icon, light blue line, and weather alert*/
+
+/* nav menu */
+.topnav {
+  overflow: hidden;
+  background-color: #32657f;
+  position: relative;
+}
+
+/* class = title */
+/* logo and title */
+.title {
+  padding: 10px;
+}
+
+.hamburger-icon {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#hamburger {
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+  padding: 10px;
+  grid-column: 2/3;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Active "link" */
+.active {
+  background-color: rgb(50, 101, 127);
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  grid-column: span 2;
+  grid-row: 3/4;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+}
+
+/* id = myNavLinks */
+/* hides links */
+.topnav #myNavLinks {
+  display: none;
+}
+
+/* Nav links */
+.topnav a {
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Hamburger Menu */
+.topnav a.icon {
+  background: rgb(50, 102, 129);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Hover */
+.topnav a:hover {
+  background-color: rgb(50, 101, 127);
+  color: white;
+}
+
+.alert {
+  background-color: rgb(229, 169, 136);
+  width: 100%;
+  padding: 15px;
+}
+
+#close {
+  height: 20px;
+  width: 20px;
+  float: left;
+  cursor: pointer;
+}
+
+.footerb {
+  background-color: rgb(50, 101, 127);
+  padding: 10px;
+}
+
+.blue-background {
+  width: 100%;
+  height: 40px;
+  background-color: rgb(137, 181, 195);
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 500;
+  padding: 10px;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+
+/*----------  Main  ----------*/
+/* title, logo, nav links, hamburger menu icon, light blue line, and weather alert*/
+.box-h a {
+  color: rgb(255, 255, 255);
+  border-style: none;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(229, 169, 136);
+  border-radius: 2rem;
+}
+
+.box-h a {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.box-h a:hover {
+  color: rgb(40, 82, 105);
+}
+
+/*=====  End of All Elements  ======*/
+
+/*=============================================
+=                   Home                     =
+=============================================*/
+.box-h {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.two-h, .three-h, .four-h, .five-h, .six-h, .seven-h, .eight-h {
+  border: 2px dotted;
+  border-color: rgb(50, 101, 127);
+  border-radius: 8px;
+}
+
+/* Box three ----> Amenities Box */
+.amenities-container{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.amenities-img {
+  width: 64px;
+}
+
+.amenities {
+  padding: 10px;
+}
+
+/* Box four ----> Rooms Box */
+.image-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.img-box {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.461);
+  width: 200px;
+  font-size: 16px;
+  padding: 14px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.pg-num {
+  color: rgb(236, 236, 237);
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+.dots {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  margin: 0 3px;
+  background-color: rgb(137, 181, 195);
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+.three-dots {
+  padding: 10px;
+  text-align: center;
+}
+
+.enable, .dots:hover {
+  background-color: rgb(50, 101, 127);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Box five ----> Temple Activities Box */
+.five-h {
+  display: flex;
+  flex-direction: column;
+}
+
+.foto-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.photo img{
+  width: 64px;
+}
+
+.img-caption {
+  padding: 10px;
+  text-align: justify;
+}
+
+/* Box six ----> Temple of the Day Box*/
+.temple-boxes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr;
+  padding: 10px;
+  gap: 9px;
+}
+
+.six-h img {
+  width: 400px;
+}
+
+.temple-box {
+  padding: 10px;
+  background-color: rgb(137, 181, 195);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.temple-box img {
+  width: 64px;
+}
+
+.t-t {
+  padding: 8px;
+  grid-column: span 2;
+}
+
+.six-h p {
+  font-weight: 300;
+  padding: 2px;
+  text-align: justify;
+}
+
+.t-b {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+.t-l {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.t-r {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  text-align: center;
+}
+
+/* Box seven ----> Weather Box */
+
+.seven-h img{
+  width: 64px;
+}
+
+.weather-container{
+  padding: 20px;
+  background-color: rgb(40, 82, 105);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+
+/* Box eight ----> Contact Box */
+.contact {
+  display: flex;
+  flex-direction: row;
+  padding: 9px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-img {
+  width: 64px;
+  height: 64px;
+  padding: 9px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  border: 2px dotted;
+  border-color: rgb(50, 101, 127);
+  border-radius: 8px;
+}
+/*=====  End of Home  ======*/
+
+/*=============================================
+=            Temple Elements                  =
+=============================================*/
+.temple-pg {
+  margin: 20px 50px 20px 45px;
+}
+
+.view {
+  margin: 10px;
+}
+
+.templeCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.templeCards section {
+  background-color: rgb(255, 255, 255);
+  border: 2px dotted;
+  border-color: rgb(50, 101, 127);
+  border-radius: 8px;
+  padding: 20px;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.templeCards section p {
+  padding: 20px;
+}
+
+.templeCards img {
+  width: 300px;
+}
+
+.templeCards a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.switchListView {
+  display: block;
+}
+
+.switchListView img {
+  display: none;
+}
+
+.switchListView section {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  margin: 10px;
+}
+
+.switchListView section h3 {
+  font-size: 16px;
+}
+
+
+.switchListView section p, .templeCards section p {
+  text-align: left;
+  font-size: 12px;
+}
+
+.switchListView section a, .templeCards section a {
+  color: rgb(0, 0, 255);
+  align-self: center;
+  font-size: 13px;
+}
+
+.switchListView section {
+  border: 2px dotted;
+  border-color: rgb(50, 101, 127);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+}
+
+.switchListView section:first-child {
+  background-color: rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(odd) {
+  background-color: rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(odd) a {
+  background-color: rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(odd) a:hover,
+.switchListView section:nth-child(even) a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.selectViewDirectory ul {
+  display: flex;
+  justify-content: center;
+}
+
+.selectViewDirectory ul li {
+  margin: 10px;
+}
+
+.selectViewDirectory a {
+  color: rgb(0, 0, 0);
+}
+
+.selectViewDirectory li {
+  list-style: none;
+}
+
+.gridViewbtn a,
+.listViewbtn a {
+  text-decoration: none;
+  background-color: rgb(50, 101, 127);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+/*=====  End of Temple Elements  ======*/
+
+
+/*=============================================
+=            Reservation            =
+=============================================*/
+
+/* Style the form */
+#reservation-form, #contact-us-form {
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: 1px solid rgb(170, 170, 170);
+}
+
+#subBtn {
+  width: 80px;
+  color: rgb(255, 255, 255);
+  border-style: none;
+  cursor: pointer;
+  padding: 6px;
+  background-color: rgb(229, 169, 136);
+  border-radius: 2rem;
+  font-size: 18px;
+}
+
+#subBtn {
+  float: right;
+}
+
+.tab{
+  padding: 10px;
+}
+
+/*=====  End of Reservation  ======*/
+
+
+/*=============================================
+=               Services                     =
+=============================================*/
+.services {
+  padding: 10px;
+}
+
+.one-s ul li{
+  list-style-type: none;
+  padding: 8px;
+}
+
+.two-s-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.two-s-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/*=====  End of Services  ======*/
+
+
+/*=============================================
+=            Missionary            =
+=============================================*/
+.missionary {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.missionary h2{
+  text-align: center;
+}
+
+.links {
+  padding: 10px;
+}
+
+.missionary-box{
+  padding: 10px;
+}
+
+.missionary-box img{
+  width: 400px;
+}
+/*=====  End of Missionary  ======*/
+
