@@ -1,0 +1,436 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+/* Headers */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
+
+/* Paragraphs */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap"); /* favorite */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+
+/* padding: top right bottom left; */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Mono", "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #F7B267;
+  color: #444;
+}
+
+p {
+  font-family: "Nunito", Monospace, sans-serif;
+  font-size: 18px;
+}
+
+#content-h {
+  color: white;
+  margin: 20px;
+  width: 100%;
+}
+
+/*--------------------------------
+              Home
+--------------------------------*/
+
+/*--------------------------------*/
+
+/*Link Bar Group*/
+.links {
+  text-align: center;
+  font-family: "Nunito", Monospace, sans-serif;
+  font-size: 17px;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.links a {
+  border-style: solid;
+  border-color: #F25C54;
+  border-width: 2px;
+  border-radius: 5px;
+  
+  background: #F25C54;
+  padding: 10px 20px;
+  color: white;
+  
+  text-decoration: none;
+}
+
+.links a:hover {
+  border-style: solid;
+  border-color: #F25C54;
+  border-width: 2px;
+  border-radius: 5px;
+  
+  background-color: #F7B267;
+  color: #F25C54;
+}
+.home {
+  grid-column: 1;
+  grid-row: 1;
+  display: inline-block;
+}
+
+.index {
+  grid-column: 2;
+  grid-row: 1;
+  display: inline-block;
+}
+
+.skills {
+  grid-column: 3;
+  grid-row: 1;
+  display: inline-block;
+}
+
+.forms {
+  grid-column: 4;
+  grid-row: 1;
+  display: inline-block;
+}
+
+/*--------------------------------*/
+/*Titles group*/
+.titles {
+  padding: 10px;
+}
+
+/*Emilee Hatch*/
+.name {
+  text-align: center;
+  margin-top: -20px;
+}
+
+/*Web Designer | Computer Programmer | Illustrator*/
+.web-com-illu {
+  text-align: center;
+}
+
+/*--------------------------------*/
+/*Middle link group*/
+.page-link-bar {
+  background-color: #F27059;
+  justify-items: center;
+  border-radius: 5px;
+  padding: 6px 6px 6px 6px;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+
+}
+
+/*Biography - link*/
+.bio-link {
+  display: inline-block;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/*Hobbies - link*/
+.hobbies-link {
+  display: inline-block;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/*Education - link*/
+.edu-link {
+  display: inline-block;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/*Goals - link*/
+.goals-link {
+  display: inline-block;
+  grid-column: 4;
+  grid-row: 1;
+}
+
+/*--------------------------------*/
+/*Information group*/
+.information {
+  display: inline-grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 100%;
+}
+
+/*Biography*/
+.biography {
+  background-color: #F79D65;
+  border-radius: 5px;
+  grid-row: 1;
+}
+
+.biography h3 {
+  background-color: #F27059;
+  border-radius: 5px;
+  padding: 5px;
+}
+.biography p {
+  padding: 5px;
+}
+
+/*Hobbies*/
+.hobbies {
+  background-color: #F79D65;
+  border-radius: 5px;
+  grid-row: 2;
+}
+
+.hobbies h3 {
+  background-color: #F27059;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.hobbies p {
+  padding: 5px;
+}
+
+/*Education*/
+.education {
+  background-color: #F79D65;
+  border-radius: 5px;
+  grid-row: 3;
+}
+
+.education h3 {
+  background-color: #F27059;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.education ul {
+  font-family: "Nunito", Monospace, sans-serif;
+  font-size: 18px;
+  
+  padding: 5px;
+}
+
+/*Goals*/
+.goals {
+  background-color: #F79D65;
+  border-radius: 5px;
+  grid-row: 4;
+}
+
+.goals h3 {
+  background-color: #F27059;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.goals p,
+h4 {
+  padding: 5px;
+}
+
+/*--------------------------------*/
+/*Footer group*/
+.footer {
+  border: 2px solid #F25C54;
+  background: #F25C54;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  font-size: 15px;
+}
+
+/*Copy*/
+.copy {
+  grid-row: 1;
+  grid-column: 1;
+  display: inline-block;
+  padding: 10px;
+  justify-items: left;
+}
+
+/*Site Plan*/
+.siteplan-link {
+  grid-row: 1;
+  grid-column: 2;
+  display: inline-block;
+  font-family: "Nunito", Monospace, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.siteplan-link a {
+  grid-row: 1;
+  grid-column: 2;
+  display: inline-block;
+  padding: 30px;
+  font-family: "Nunito", Monospace, sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.siteplan-link a:hover {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #F7B267;
+  background-color: #F7B267;
+  color: #F25C54;
+}
+
+/*Social*/
+.social {
+  display: inline-block;
+  grid-column: 3;
+  grid-row: 1;
+  padding: 10px;
+}
+
+.facebook {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.instagram {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.youtube {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*--------------------------------
+              Skills
+--------------------------------*/
+
+/*--------------------------------
+            Contact Me
+--------------------------------*/
+/* Forms Page */
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+  margin-left: 0.5em;
+}
+
+#feedback {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5em;
+  /* make this element invisible until we are ready for it */
+  display: none;
+}
+.moveDown {
+  margin-top: 3em;
+}
+
+/*--------------------------------
+            Media
+--------------------------------*/
+
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 300px) {
+  /* For mobile phones: */
+  .links,
+  .titles,
+  .page-link-bar,
+  .footer {
+    width: 100%;
+  }
+  .links {
+    text-align: center;
+    font-family: "Nunito", Monospace, sans-serif;
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    width: 100%;
+  }
+}
