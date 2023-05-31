@@ -1,0 +1,564 @@
+/*----------  SMALL VIEW  ----------*/
+
+/*=============================================
+=                   CONTENT                   =
+=============================================*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*
+    font-family: 'Fredoka', sans-serif;
+    */
+    font-family: 'Nunito', sans-serif, arial;
+    font-size: 16px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+img {
+    width: 100%;
+}
+
+
+main {
+    margin: 14px;
+}
+
+
+/*=====  End of CONTENT   ======*/
+
+
+
+
+/*=============================================
+=                   HEADER                   =
+=============================================*/
+.greeting {
+    background-color: rgb(8, 55, 88);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(200, 65, 16);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.title h1 {
+    padding-left: 8px;
+}
+
+.title img {
+    width: 100px;
+    padding-right: 5px;
+    padding-left: 8px;
+}
+
+.stg {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.ch {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+nav {
+    background-color: rgb(143, 42, 29);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: rgb(124, 37, 25);
+    color: rgb(255, 255, 255);
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul li.active a {
+    color: rgb(253, 187, 20);
+    text-decoration: underline;
+  }
+
+/*=====  End of HEADER   ======*/
+
+
+
+
+/*=============================================
+=                   MAIN                      =
+=============================================*/
+
+/*----------  Subsection Index STRT  ----------*/
+
+/* Images */
+.home img{
+    width: 100%;
+}
+
+.weather img{
+    width: 90px;
+}
+
+.spotlights img{
+    width: 130px;
+}
+
+/* Decorative Line */
+.darkline{
+    height: 8px;
+    width: 145px;
+    border-radius: 9px;
+    background-color: rgb(200, 65, 16);
+    margin-bottom: 12px;
+}
+
+/* Whole box w/square class */
+.square{
+    padding: 8px;
+    margin: 10px;
+}
+
+/* Headers */
+.header{
+    text-align: left;
+}
+
+/* Sub-Headers */
+.sub-header{
+    text-align: left;
+}
+
+/* Events */
+.calendar{
+    display: grid;
+    grid-template-columns: 20% 80%; 
+}
+
+.date{
+    width: 70px;
+    background-color: rgb(253, 187, 20);
+    margin: 9px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.eventinfo{
+    padding: 9px;
+}
+
+/* Weather */
+.weather-container{
+    background-color: rgb(70, 98, 137);
+    color: rgb(255, 255, 255);
+    margin: 9px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-left, .container-right{
+    margin: 9px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container-right{
+    background-color: rgb(91, 126, 173);
+    width: 100%;
+    border-radius: 9px;
+}
+
+/* News */
+.news-container{
+    padding: 10px;
+}
+
+.newsie{
+    padding: 5px;
+}
+/*----------  Subsection Index END  ----------*/
+
+
+/*----------  Subsection Discover STRT  ----------*/
+.discover {
+    text-align: center;
+    margin: 9px;
+}
+
+.grow {
+    padding: 8px;
+}
+/*----------  Subsection Discover END  ----------*/
+
+/*----------  Subsection Directory STRT ----------*/
+.view{
+    margin: 10px;
+}
+
+.businessCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.businessCards section {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(200, 65, 16);
+    width: 350px;
+    margin: 9px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.businessCards section p {
+    width: 320px;
+    padding: 3px;
+}
+
+.businessCards img {
+    width: 200px;
+}
+
+.businessCards section p:first-child {
+    font-size: 16px;
+}
+
+.businessCards a:hover{
+    color: rgb(253, 187, 20);
+    text-decoration: none;
+}
+
+.switchListView {
+    display: block;
+}
+
+.switchListView img {
+    display: none;
+}
+
+.switchListView section {
+    width: 100%;
+    display: grid;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px
+}
+
+.switchListView section p1, .switchListView section p2  {
+    text-align: center;
+    padding: 9px;
+}
+.switchListView section a, .businessCards section a {
+    color: blue;
+    align-self: center;
+}
+
+.switchListView section{
+    border: 3px solid rgb(200, 65, 16);
+    border-radius: 10px;
+}
+
+.switchListView section:first-child {
+    background-color: rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(odd) {
+    background-color: rgb(200, 65, 16);
+    color:rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(odd) a{
+    color:rgb(255, 255, 255);
+}
+
+.switchListView section:nth-child(odd) a:hover,
+.switchListView section:nth-child(even) a:hover{
+    color: rgb(253, 187, 20);
+    text-decoration: none;
+}
+
+.selectViewDirectory ul {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.selectViewDirectory ul li {
+    margin: 5px;
+}
+
+.selectViewDirectory a {
+ color: rgb(0, 0, 0);
+}
+
+.selectViewDirectory li {
+    list-style: none;
+}
+
+.gridViewbtn a,
+.listViewbtn a {
+    text-decoration: none;
+    background-color: rgb(90, 126, 173);
+    color:rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+/*----------  Subsection Directory END ----------*/
+
+/*----------  Subsection Join STRT ----------*/
+.join{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.member, .levels {
+    width: 100%;
+    padding: 10px;
+}
+
+.joinContainer {
+    height: 400px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    margin: 9px;
+}
+
+form h2 {
+    width: 100%;
+    border: 3px solid rgb(253, 187, 20);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid;
+    outline: none;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: rgba(143, 42, 29, 0.603);
+}
+
+.btn-box {
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+.btn {
+    width: 80px;
+    height: 30px;
+    background-color: rgb(143, 42, 29);
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin-right: 10px;
+    border-style: none;
+    cursor: pointer;
+}
+
+#form2, #form3 {
+    display: none;
+}
+
+.free, .bronze, .silver, .goldm, .trusteem {
+    padding: 10px;
+}
+
+.price {
+    background-color: rgb(253, 187, 20);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.memberlvls {
+    padding-bottom: 10px;
+}
+
+.jointitle {
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+.memberlvls ul {
+    list-style: none;
+    padding: 0;
+}
+
+.step h2, .memberlvls h3 {
+    margin-bottom: 10px;
+}
+
+.step h2 {
+    text-align: center;
+}
+
+/*----------  Subsection Join END  ----------*/
+
+/*----------  Subsection Contact STRT ----------*/
+.contact .header{
+    text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.usrform{
+    width: 100%;
+}
+/*----------  Subsection Contact END  ----------*/
+
+/*=====  End of MAIN   ======*/
+
+
+
+
+/*=============================================
+=                   FOOTER                   =
+=============================================*/
+footer {
+    align-items: center;
+    background-color: rgb(200, 65, 16);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+footer h3 {
+    font-size: 30px;
+}
+
+.social img {
+    height: auto;
+    width: 30px;
+}
+
+footer section.box4 div.social ul li {
+    display: inline;
+}
+
+.box1,
+.box3,
+.box4 {
+    padding: 8px;
+    text-align: left;
+    width: 200px;
+}
+
+.box2 {
+    padding: 8px;
+}
+
+.box3 a{
+    color:rgb(255, 255, 255);
+}
+.box3 a:hover{
+    color: rgb(253, 187, 20);
+    text-decoration: none;
+}
+
+.box5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.box5 h2 {
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.box4 p {
+    padding-bottom: 9px;
+}
+
+.whiteline {
+    height: 2px;
+    width: 300px;
+    border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+}
+
+/*=====  End of FOOTER   ======*/
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}

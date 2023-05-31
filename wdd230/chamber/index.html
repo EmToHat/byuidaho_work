@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <!--HEAD-->
+  <head>
+    <!--Title-->
+    <title>SUCC</title>
+
+    <!--Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce landing page" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+
+    <!--Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!--BODY-->
+  <body>
+    <!--Header-->
+    <header>
+      <!--JavaScript Banner-->
+      <span id="greeting" class="greeting"></span>
+
+      <div class="title">
+        <img src="images/icons/sun250x250.png" alt="Sun image" />
+
+        <h1>
+          <span class="stg">Southern Utah</span>
+          <br />
+          <span class="ch">Chamber of Commerce</span>
+        </h1>
+      </div>
+
+      <!--<span id="datetime" class="datetime"></span>-->
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Main-->
+    <main class="clearfix home">
+      <div class="square welcome">
+        <div class="header">
+          <h2>Welcome to Southern Utah!</h2>
+          <div class="darkline"></div>
+        </div>
+        <picture>
+          <source
+            media="(max-width: 200px)"
+            srcset="images/discover/utah-200.jpg"
+          />
+          <source
+            media="(max-width: 500px)"
+            srcset="images/discover/utah-500.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/discover/utah-800.jpg"
+          />
+          <img
+            src="images/discover/utah-1024.jpg"
+            data-src="images/discover/utah-1024.jpg"
+            alt="Cacti in Southern Utah"
+          />
+        </picture>
+      </div>
+
+      <div class="square event">
+        <div class="header">
+          <h2>Upcoming Events</h2>
+          <div class="darkline"></div>
+        </div>
+
+        <div class="date1 calendar">
+          <div class="date">
+            <span class="datename">Tue</span>
+            <span class="datenumber">29</span>
+          </div>
+          <div class="eventinfo">
+            <h3 class="eventtitle"><span>Jewlery Charity Fundraiser</span></h3>
+            <div class="eventduration">
+              <span class="eventdate">March 29</span>
+              <br />
+              <span class="eventtime">9:00am-4:30pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="date2 calendar">
+          <div class="date">
+            <span class="datename">Thur</span>
+            <span class="datenumber">14</span>
+          </div>
+          <div class="eventinfo">
+            <h3 class="eventtitle"><span>Youth Trail Riding</span></h3>
+            <div class="eventduration">
+              <span class="eventdate">April 14</span>
+              <br />
+              <span class="eventtime">2:00pm-6:30pm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="date3 calendar">
+          <div class="date">
+            <span class="datename">Wed</span>
+            <span class="datenumber">11</span>
+          </div>
+          <div class="eventinfo">
+            <h3 class="eventtitle"><span>Goblin Valley Nature Hike</span></h3>
+            <div class="eventduration">
+              <span class="eventdate">May 11</span>
+              <br />
+              <span class="eventtime">9:00am-4:30pm</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="square weather">
+        <div class="header">
+          <h2>Current Weather</h2>
+          <div class="darkline"></div>
+        </div>
+        <div class="weather-container">
+          <div class="container-left">
+            <figure>
+              <img src="" alt="" id="weathericon" />
+              <figcaption><span id="skies"></span></figcaption>
+            </figure>
+          </div>
+          <div class="container-right">
+            <p>Temperature <br /><span id="current-temp"></span>&#176; F</p>
+            <p>Wind Speed <br /><span id="speed"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="square news">
+        <div class="header">
+          <h2>Local News</h2>
+          <div class="darkline"></div>
+        </div>
+        <div class="news-container">
+          <div class="news1 newsie">
+            <h3 class="sub-header">Girl Scouts</h3>
+            <p>
+              ST. GEORGE — Tis the season of Thin Mints and Tagalong cookies.
+              Girl Scout Cookie booths are now open in Southern Utah. This
+              annual fundraiser helps local Girl Scouts learn scrumptious
+              business lessons and be part of the largest girl-led
+              entrepreneurial program in the world.
+              <a
+                href="https://www.stgeorgeutah.com/news/archive/2022/03/15/apk-southern-utah-girl-scouts-share-sweet-business-lessons/#.YjE2XRDMI-Q"
+                >Read Me...</a
+              >
+            </p>
+          </div>
+          <div class="news2 newsie">
+            <h3 class="sub-header">Wild Wolverine</h3>
+            <p>
+              RANDOLPH — A wolverine that was spotted recently in Rich County is
+              now wandering the Uinta Mountains with a GPS collar around its
+              neck. Utah Division of Wildlife Resources biologists are excited
+              to learn more about an elusive animal with only eight confirmed
+              sightings in Utah since 1979.
+              <a
+                href="https://www.stgeorgeutah.com/news/archive/2022/03/15/mar-15-edit-pfft-utah-wildlife-biologists-capture-collar-and-release-wolverine/#.YjE3PBDMI-Q"
+                >Read Me...</a
+              >
+            </p>
+          </div>
+          <div class="news3 newsie">
+            <h3 class="sub-header">Wilderness Volunteers</h3>
+            <p>
+              ST. GEORGE — The term “backlog” – though fitting for wilderness
+              areas – doesn’t begin to describe the number of maintenance
+              projects that have been deferred for more than a year at national
+              parks and on other public land.
+              <a
+                href="https://www.stgeorgeutah.com/news/archive/2022/03/14/ajt-25-years-and-counting-wilderness-volunteers-continues-to-play-vital-role-in-southern-utah-nation/#.YjE3lxDMI-Q"
+                >Read Me...</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="square spotlights">
+        <div class="header">
+          <h2>Thank You for Your Membership!</h2>
+          <div class="darkline"></div>
+        </div>
+        <div class="membership">
+          <div class="spot1">
+            <h3 class="sub-header">Trustee Members</h3>
+            <span class="ebikes"
+              ><img src="images/logos/ebikelogo.jpg" alt="Electric Bikes Logo"
+            /></span>
+            <span class="honey"
+              ><img
+                src="images/logos/honeylogo.jpg"
+                alt="The Honey Carver Logo"
+            /></span>
+            <span class="burgers"
+              ><img
+                src="images/logos/burgerslogo.jpg"
+                alt="Molly and Joe's Burgers logo"
+            /></span>
+          </div>
+
+          <div class="spot2">
+            <h3 class="sub-header">Gold Members</h3>
+            <span class="jewlery">
+              <img
+                src="images/logos/etnajewlerslogo.jpg"
+                alt="Etna Jewlers Logo"
+              />
+            </span>
+            <span class="horse">
+              <img
+                src="images/logos/equestrianxpresslogo.jpg"
+                alt="Equestrian Xpress Logo"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer">
+        <section class="box1">
+          <h3>Contact Us!</h3>
+          <p>
+            Southern Utah <br />
+            Chamber of Commerce
+          </p>
+          <p>175 E 200 N, St. George, UT 84770</p>
+          <p>
+            info-succ@gmail.com
+            <br />
+            +14356274000
+          </p>
+        </section>
+
+        <div class="box2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101862.33242617044!2d-113.60634493720359!3d37.076593491677926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ca44ce90467f7d%3A0x77948a1ded6ed8fd!2sCity%20of%20St.%20George!5e0!3m2!1sen!2sus!4v1646279642256!5m2!1sen!2sus"
+            width="200"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="map"
+          ></iframe>
+        </div>
+
+        <section class="box3">
+          <h3>Additional Resources</h3>
+          <p>
+            <a href="join.html">Join Today!</a>
+            <br />
+            <a href="directory.html">Chamber Directory</a>
+            <br />
+            <a href="contact.html">Contact Us</a>
+          </p>
+        </section>
+
+        <section class="box4">
+          <h3>Stay Connected!</h3>
+          <p>Feel free to follow us on social media!</p>
+          <div class="social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><img src="images/icons/facebook64x64.png" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><img src="images/icons/linkedin64x64.png" alt="Linkedin"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.whatsapp.com/" target="_blank"
+                  ><img src="images/icons/whatsapp64x64.png" alt="whatsapp"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section class="box5">
+        <div class="whiteline"></div>
+        <h2>
+          &copy;<span id="year"></span> | Emilee Hatch | Utah | BYU-Idaho
+          <br />
+          Last Update: <span id="modified"></span>
+        </h2>
+        <p>Weather by: Openweathermap.org</p>
+        <p>News by: stgeorgeutah.com</p>
+      </section>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="js/index.js"></script>
+    <script src="js/weatherapi.js"></script>
+  </body>
+</html>

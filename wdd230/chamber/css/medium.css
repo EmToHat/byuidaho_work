@@ -1,0 +1,215 @@
+/*----------  MEDIUM VIEW  ----------*/
+
+@media (min-width: 600px) {
+
+    /*=============================================
+    =                   HEADER                   =
+    =============================================*/
+    header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 1%;
+    }
+
+    nav {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation ul {
+        display: inline;
+    }
+
+    .navigation li {
+        display: inline-block;
+        padding: 0px 10px;
+    }
+
+    .navigation a {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .navigation a:hover {
+        border-radius: 8px;
+        color: rgb(255, 255, 255);
+    }
+
+    /*=====  End of HEADER   ======*/
+
+
+    /*=============================================
+    =                   MAIN                      =
+    =============================================*/
+    /*----------  Subsection Index STRT  ----------*/
+    
+    .home{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .welcome {
+        grid-row: 1/2;
+        grid-column: span 2;
+    }
+
+    .calendar {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .date {
+        height: 60px;
+        padding: 9px;
+    }
+    /*----------  Subsection Index END  ----------*/
+
+    /*----------  Subsection Discover STRT  ----------*/
+    .discover {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }
+
+    .discover picture{
+        margin: 3px;
+    }
+    .discover h1 {
+        grid-column: span 2;
+        text-align: center;
+    }
+
+    .dixie {
+        grid-column: 1/2;
+        grid-row: 2/5;
+    }
+
+    .angels {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .paint {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .sheep {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .sculpture {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+
+    .devil {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding-top: 10px;
+    }
+    
+    .arches {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .reef {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    .bryce, .fairy {
+        grid-row: 6/7;
+    }
+
+    .red, .sign {
+        grid-row: 7/8;
+    }
+
+    .canyon, .blue {
+        grid-row: 8/9;
+    }
+
+    .road, .utah {
+        grid-row: 9/10;
+    }
+
+    .grow img {
+        transition: 1s ease;
+    }
+
+    .grow img:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 1.5s ease;
+    }
+
+    /*----------  Subsection Discover END  ----------*/
+
+    /*----------  Subsection Directory STRT  ----------*/
+    .businessCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    /*----------  Subsection Directory END  ----------*/
+
+    /*----------  Subsection Join STRT  ----------*/
+    .memberlvls{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .free, .silver {
+        grid-column: 1/2;
+    }
+
+    .bronze, .goldm {
+        grid-column: 2/3;
+    }
+
+    .join{
+        display: flex;
+        flex-direction: column;
+    }
+    /*----------  Subsection Join END  ----------*/
+    /*=====  End of MAIN   ======*/
+
+
+
+
+    /*=============================================
+    =                   FOOTER                   =
+    =============================================*/
+
+    footer .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding-top: 30px;
+    }
+
+    .box1,
+    .box2 {
+        grid-row: 1/2;
+    }
+
+    .box3,
+    .box4 {
+        grid-row: 2/3;
+    }
+
+    .social ul {
+        grid-column: span 2;
+    }
+    /*=====  End of FOOTER  ======*/
+}
