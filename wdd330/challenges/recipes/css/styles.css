@@ -1,0 +1,170 @@
+:root {
+  /* Background */
+  --bg-clr-01: rgb(255, 255, 255);
+  --bg-clr-02: rgb(169, 46, 48);
+  --bg-clr-03: rgb(51, 51, 51);
+  --bg-clr-04: rgba(221, 221, 221, 0.506);
+
+  --brd-clr-01: rgb(226, 226, 226);
+  
+
+  /* Text */
+  --text-clr-01: rgb(255, 255, 255);
+  --text-clr-02: rgb(169, 46, 48);
+  --text-clr-03: rgb(0, 0, 0);
+  --text-clr-04: rgb(102, 102, 102);
+  --text-clr-05: rgba(0,0,0,.7);
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Comfortaa', Arial, Tahoma;
+}
+
+header > h1 {
+  padding: 20px;
+}
+
+.top {
+  background-color: var(--bg-clr-03);
+  color: var(--text-clr-01);
+}
+
+a {
+  padding: 5px;
+  background-color: var(--bg-clr-02);
+  border: solid 2px var(--bg-clr-02);
+  text-decoration: none;
+  color: var(--text-clr-01);
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  padding: 5px;
+  background-color: var(--bg-clr-01);
+  border: solid 2px var(--bg-clr-02);
+  text-decoration: none;
+  color: var(--text-clr-02);
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+/* Categories Styles */
+.styles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid var(--brd-clr-01);
+  border-radius: .5rem;
+}
+
+form {
+  padding-top: 15px;
+}
+
+.categories, .style {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.categories > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 20px;
+}
+
+.categories > ul > li {
+  border: 1px solid var(--brd-clr-01);
+  border-radius: .5rem;
+}
+
+.categories > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.categories > ul > li > figure > img {
+  width: 100%;
+}
+
+.categories > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--text-clr-05);
+  width: 100%;
+}
+
+.categories > ul > li > figure > figcaption > h3 {
+  color: var(--text-clr-01);
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.categories > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: var(--text-clr-04);
+}
+
+.categories > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  background-color: var(--bg-clr-03);
+  overflow: hidden;
+}
+
+nav > a {
+  float: right;
+  margin-right: 3px;
+}
+
+nav > a:hover {
+  background-color: var(--bg-clr-03);
+  color: var(--text-clr-01);
+}
+
+.style > h2 {
+  width: 100%;
+  color: var(--text-clr-02);
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+  background-color: var(--bg-clr-03);
+  padding: 1rem;
+  color: var(--text-clr-01);
+  text-align: center;
+  font-size: .75rem;
+}
+
+footer > p {
+  padding: .25rem;
+}

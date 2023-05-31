@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- / CSS -->
+    <link rel="stylesheet" href="todo.css" />
+    <title>To Do</title>
+  </head>
+  <body>
+    <h1 id="title">My Todo List</h1>
+
+    <section class="categories">
+      <label for="categories">Choose a category:</label>
+
+      <select name="categories" id="task-type" aria-label="Options">
+        <option value="all" class="all-tasks">All</option>
+        <option value="incomplete" class="incomplete-tasks">Incomplete</option>
+        <option value="complete" class="complete-tasks">Complete</option>
+      </select>
+    </section>
+
+    <span class="tasks-remaining"></span>
+
+    <section class="task-list">
+      <input type="text" class="task-input" placeholder="type task here..." aria-placeholder="task input box">
+
+      <button type="button" class="add-btn">Add</button>
+
+      <div class="task-lists">
+        <div class="incomplete">
+          <h2 class="title">Incomplete Tasks</h2>
+          <ul class="list"></ul>
+        </div>
+  
+        <div class="complete">
+          <h2 class="title">Completed Tasks</h2>
+          <ul class="completed-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
